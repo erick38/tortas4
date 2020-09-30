@@ -1,0 +1,23 @@
+:root{
+    box-sizing: border-box;
+}
+/*  Put your CSS Here */
+#board {
+  
+    height: 600px; 
+    margin: auto; 
+    display: flex;
+}
+.columns{
+    border: solid 1px black;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+#piece {
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    display: flex;
+
+}
