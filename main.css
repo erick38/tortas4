@@ -5,7 +5,7 @@
 #board {
   background-color: blue;
     height: 540px; 
-    width: 540px;
+    width: 650px;
     margin: auto; 
     display: flex; 
     justify-content: center;
@@ -24,11 +24,17 @@
     border: solid 1px black;
     display: flex;
     flex-direction: column-reverse;
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    width: 92.86px;
+    height: 540px;
+    align-items: center;
+
+    
   }
 
 .columns:hover {
     background-color: violet;
+
 }
 /* .piece {
     width: 90px;
