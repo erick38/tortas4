@@ -3,21 +3,40 @@
 }
 /*  Put your CSS Here */
 #board {
-  
+  background-color: blue;
     height: 600px; 
+    width: 600px;
     margin: auto; 
     display: flex;
+    justify-content: center;
+    margin-top: 80px;
 }
-.columns{
+.columns {
     border: solid 1px black;
     display: flex;
     flex-direction: row;
     flex-grow: 1;
+    
 }
-#piece {
+.piece {
     width: 90px;
     height: 90px;
     margin: 5px;
     display: flex;
+    position: absolute;
 
+}
+
+h1 {
+    text-align: center;
+    margin: 0px auto;
+
+   
+}
+.piece .red {
+background-color: red;
+}
+
+.piece .yellow {
+    background-color: yellow;
 }
