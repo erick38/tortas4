@@ -7,23 +7,30 @@
     height: 540px; 
     width: 540px;
     margin: auto; 
-    display: flex;
+    display: flex; 
     justify-content: center;
     margin-top: 80px;
 }
-.columns {
+/* .columns {
     border: solid 1px black;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    width: 540px;
-    height: 540px;
-}
+    width: 700px;
+    height:800px;
+} */
+
+.columns {
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+  }
 
 .columns:hover {
     background-color: violet;
 }
-.piece {
+/* .piece {
     width: 90px;
     height: 90px;
     margin: 5px;
@@ -31,7 +38,17 @@
     position: absolute;
    
 
-}
+} */
+
+.piece {
+    width: 80px;
+    height: 80px;
+    /* margin: 5px;
+      display: flex;
+      position: absolute; */
+    border: 1px solid black;
+    border-radius: 50%;
+  }
 
 h1 {
     text-align: center;
