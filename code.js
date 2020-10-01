@@ -48,6 +48,48 @@ let switchPlayers = function () {
 
 };
 
+// adding win count vertically //
+
+function checkforVerticalWin() {
+
+  let x = 0;
+  for (let i = 0; i < boardModel[0].length; i++) {
+    for (let y = 0; y < boardModel.length; y++) {
+      if (boardModel[y][i] === player) {
+        x++
+      }
+      else if (boardModel[y][i] !== player) {
+        x = 0;
+      }
+      if (x > 3) {
+        alert(player + "wins")
+      }
+    }
+
+  }
+}
+
+function checkforHorizontalWin() {
+
+  for (let i = 0; i < boardModel.length; i++) {
+
+    let x = 0;
+    for (let y = 0; y < boardModel[i].length; y++) {
+      if (boardModel[i][y] === player) {
+        x++
+        console.log(x, i, y)
+      }
+      else if (boardModel[i][y] !== player) {
+        x = 0;
+      }
+      if (x > 3) {
+        alert(player + "wins")
+      }
+    } console.log(boardModel, x)
+  }
+}
+// console.log(boardModel);
+
 let columnClickHandler = function (evt) {
 
   let clicked = evt.currentTarget;
@@ -57,6 +99,8 @@ let columnClickHandler = function (evt) {
   for (let row = boardModel.length - 1; row >= 0; row--) {
     if (boardModel[row][col] === null) {
       boardModel[row][col] = player;
+      checkforVerticalWin()
+      checkforHorizontalWin()
       break;
     }
   }
@@ -127,3 +171,4 @@ createColumnEventListener();
   // set the game state to yellow
   // If gamestate is yellow, yellow may drop their piece in a column */
   //
+
