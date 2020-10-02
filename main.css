@@ -1,15 +1,15 @@
-:root{
-    box-sizing: border-box;
+:root {
+  box-sizing: border-box;
 }
 /*  Put your CSS Here */
 #board {
   background-color: blue;
-    height: 540px; 
-    width: 650px;
-    margin: auto; 
-    display: flex; 
-    justify-content: center;
-    margin-top: 80px;
+  height: 540px;
+  width: 650px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
 }
 /* .columns {
     border: solid 1px black;
@@ -21,51 +21,34 @@
 } */
 
 .columns {
-    border: solid 1px black;
-    display: flex;
-    flex-direction: column-reverse;
-    /* flex-grow: 1; */
-    width: 92.86px;
-    height: 540px;
-    align-items: center;
-
-    
-  }
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column-reverse;
+  /* flex-grow: 1; */
+  width: 92.86px;
+  height: 540px;
+  align-items: center;
+}
 
 .columns:hover {
-    background-color: violet;
-
+  background-color: violet;
 }
-/* .piece {
-    width: 90px;
-    height: 90px;
-    margin: 5px;
-    display: flex;
-    position: absolute;
-   
-
-} */
 
 .piece {
-    width: 80px;
-    height: 80px;
-    /* margin: 5px;
-      display: flex;
-      position: absolute; */
-    border: 1px solid black;
-    border-radius: 50%;
-  }
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
 
 h1 {
-    text-align: center;
-    margin: 0px auto;
-
-   
+  text-align: center;
+  margin: 0px auto;
 }
 .red {
-background-color: red;
+  background-color: red;
 }
 
 .yellow {
-    background-color: yellow;
+  background-color: yellow;
 }
