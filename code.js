@@ -71,6 +71,31 @@ function checkforHorizontalWin() {
 }
 // console.log(boardModel);
 
+function checkforaUpDiagonalWin() {
+  for (let i = boardModel.length - 1; i > 0; i--) {
+    let x = 0;
+    for (let y = 0; y < boardModel[i].length; y++) {
+
+      if (boardModel[i][y] === player && boardModel[i - 1][y + 1] === player && boardModel[i - 2][y + 2] === player && boardModel[i - 3][y + 3] === player) {
+        alert(player + " " + "wins")
+
+      }
+    }
+  }
+}
+
+function checkforaDownDiagonalWin() {
+  for (let i = 0; i < boardModel.length - 3; i++) {
+    let x = 5;
+    for (let y = 0; y < boardModel[i].length; y++) {
+      if (boardModel[i][y] === player && boardModel[i + 1][y + 1] === player && boardModel[i + 2][y + 2] === player && boardModel[i + 3][y + 3] === player) {
+
+        alert(player + " " + "wins")
+      }
+    }
+  }
+}
+
 let columnClickHandler = function (evt) {
 
   let clicked = evt.currentTarget;
@@ -82,6 +107,8 @@ let columnClickHandler = function (evt) {
       boardModel[row][col] = player;
       checkforVerticalWin()
       checkforHorizontalWin()
+      checkforaUpDiagonalWin()
+      checkforaDownDiagonalWin()      
       break;
     }
   }
