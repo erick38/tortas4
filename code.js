@@ -58,18 +58,12 @@ function checkForTie() {
         boardModel[i][j + 5] != null &&
         boardModel[i][j + 6] != null
       ) {
-        console.log("you filled it up");
+        alert("Game ends in a tie");
         setTimeout(function () {
           location.reload();
         }, 500);
       }
     }
-  }
-  if (setDiscCount === 42) {
-    alert("you cannot add anymore discs to the board");
-    setTimeout(function () {
-      location.reload();
-    }, 500);
   }
 }
 function checkforHorizontalWin() {
