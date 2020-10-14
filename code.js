@@ -134,7 +134,7 @@ let columnClickHandler = function (evt) {
   for (let row = boardModel.length - 1; row >= 0; row--) {
     if (boardModel[row][col] === null) {
       boardModel[row][col] = player;
-      console.log(setDiscCount++);
+
 
       checkforVerticalWin();
       checkforHorizontalWin();
